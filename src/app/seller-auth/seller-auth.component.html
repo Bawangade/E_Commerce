@@ -1,0 +1,70 @@
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card " *ngIf="!showLogin">
+                    <div class="seller">
+                        <div class="sign-up">
+                            <h2 class="card-header ">Sign-up</h2>
+                            <div class="card-body">
+                                <form action="" [formGroup]="akshay1">
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Name</label>
+                                        <input type="text" formControlName="Name" class="form-control" name="Name"
+                                            placeholder="Enter Name">
+                                    </div><br>
+                                    <div class="form-group md-5">
+                                        <label for="" class="form-label">Enter Password</label>
+                                        <input type="password" formControlName="Password" class="form-control" name="Password"
+                                            placeholder="Enter Name">
+                                    </div><br>
+                                    <div class="form-group md-5">
+                                        <label for="" class="form-label">Email ID</label>
+                                        <input type="email" formControlName="Email" class="form-control" name="Email"
+                                            placeholder="Enter Name">
+                                    </div><br>
+                                    <div class="form-group">
+                                        <button class=" form-control btn btn-info">Sign-up</button>
+                                    </div>
+                                    <a type="submit" (click)="openlogin()">Already Have Account? Click to login</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card" *ngIf="showLogin">
+                    <h5 class="card-header">Login</h5>
+                    <div class="card-body">
+
+
+                        <form action="" [formGroup]="akshay2">
+                            <div class="form-group">
+                                <label class="form-label">EnterEmail</label>
+                                <input type="text" class="form-control" name="email" formControlName="email"
+                                    placeholder="Enter Email Id">
+                            </div><br>
+                            <div class="form-group">
+                                <label class="form-label">Enter Password</label>
+                                <input type="password" class="form-control" name="password" formControlName="password"
+                                    placeholder="Enter Password">
+                            </div><br>
+                            <a type="submit" class=" form-control btn btn-info" (click)="opensingup()">Login</a><br>
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
